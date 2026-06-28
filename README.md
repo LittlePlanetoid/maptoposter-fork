@@ -51,10 +51,13 @@ pip install -r requirements.txt
 
 ### Usage
 
-- run all linters: `uv run pre-commit --all-files`
-- run ruff: `uv run ruff format --diff`
-- run ty: `uv run ty check`
-- ru shellcheck: `find -name "*.sh" -not -path "*.venv*" -exec shellcheck {} \;`
+| Linter       | command                                                         | 
+|:------------:|:---------------------------------------------------------------:|
+| All          | `uv run pre-commit run --all-files`                             |
+| Ruff         | `uv run ruff format --diff`                                     |
+| Ty           | `uv run ty check`                                               |
+| Shellcheck   | `find -name "*.sh" -not -path "*.venv*" -exec shellcheck {} \;` |
+
 
 ## Usage
 
