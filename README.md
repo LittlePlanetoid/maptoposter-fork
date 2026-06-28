@@ -47,7 +47,10 @@ pip install -r requirements.txt
 
 ### Setup
 
-`apt install shellcheck`
+```bash
+apt install shellcheck
+pre-commit install
+```
 
 ### Usage
 
