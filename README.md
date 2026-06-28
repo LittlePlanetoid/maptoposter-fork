@@ -43,6 +43,19 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+## Dev
+
+### Setup
+
+`apt install shellcheck`
+
+### Usage
+
+- run all linters: `uv run pre-commit --all-files`
+- run ruff: `uv run ruff format --diff`
+- run ty: `uv run ty check`
+- ru shellcheck: `find -name "*.sh" -not -path "*.venv*" -exec shellcheck {} \;`
+
 ## Usage
 
 ### Generate Poster
